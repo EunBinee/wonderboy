@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1292253770}
-  offsetY: 1
+  offsetY: 4
   offsetZ: -10
   smooth: 5
 --- !u!20 &519420031
@@ -255,8 +255,8 @@ GameObject:
   - component: {fileID: 1292253775}
   - component: {fileID: 1292253774}
   - component: {fileID: 1292253773}
-  - component: {fileID: 1292253772}
   - component: {fileID: 1292253771}
+  - component: {fileID: 1292253772}
   - component: {fileID: 1292253776}
   - component: {fileID: 1292253777}
   m_Layer: 11
@@ -304,10 +304,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
+  m_Mass: 10
+  m_LinearDrag: 0.1
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -416,8 +416,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95195d1d29f5fce40989e07782c1b047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 250
-  JumpPower: 5
+  speed: 4500
+  JumpPower: 17
+  maxSpeed: 5.5
+  whatisGround:
+    serializedVersion: 2
+    m_Bits: 1024
+  slideRate: 0.35
+  AttackSlideRate: 0.25
+  isGround: 0
 --- !u!95 &1292253777
 Animator:
   serializedVersion: 3
@@ -592,7 +599,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 59bff30c28a7c0b4b9c6d82c772ebc0d, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
